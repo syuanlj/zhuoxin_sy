@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.feicui.activity.SoftListActivity" >
+
+    <com.feicui.view.TitleView
+        android:id="@+id/titleView1"
+        android:background="@color/deepblue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </com.feicui.view.TitleView>
+
+    <ListView
+        android:id="@+id/lv_softList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </ListView>
+<LinearLayout 
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+         android:paddingLeft="10dp"
+         android:paddingRight="10dp"
+        >
+        <CheckBox 
+            android:id="@+id/cb_checkAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            
+            />
+        <Button 
+            android:id="@+id/bt_delet"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@drawable/selector_clear_clear"
+            android:text="卸载所选软件"
+            android:textColor="@color/white"
+            />
+    </LinearLayout>
+</LinearLayout>

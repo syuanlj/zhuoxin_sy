@@ -1,0 +1,62 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+     
+   <!-- 设置页面每个item -->
+    <style name="setting_item">
+        <item name="android:contentDescription">设置页面每个item的Style</item>
+        
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/set_item_height</item>
+        <item name="android:background">@drawable/home_entry_item</item>
+        
+    </style>
+    <!-- 设置页面每个item头标题的风格 -->
+    <style name="setting_item_head">
+        <item name="android:contentDescription">设置页面每个item头标题的Style</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/set_item_titlesize</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#FF000000</item>
+        <item name="android:layout_marginLeft">10.0dip</item>
+    </style>
+
+    <!-- 设置页面每个item尾部图标 -->
+    <style name="setting_item_head_icon">
+        <item name="android:contentDescription">设置页面每个item尾部图标的Style</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">10.0dip</item>
+        <item name="android:src">@drawable/ic_arrows_right</item>
+    </style>
+
+    <style name="setting_item_head_icon_toggle" parent="setting_item_head_icon">
+        <item name="android:background">@drawable/check_switch</item>
+        <item name="android:textOff"></item>
+         <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:textOn"></item>
+    </style>
+    
+</resources>

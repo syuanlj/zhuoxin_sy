@@ -1,0 +1,24 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+     >
+	<com.feicui.view.TitleView
+        android:id="@+id/titleView1"
+        android:background="@color/deepblue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </com.feicui.view.TitleView>
+    
+  <GridView
+        android:id="@+id/gv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:numColumns="2" >
+    </GridView>
+
+    
+
+</LinearLayout>

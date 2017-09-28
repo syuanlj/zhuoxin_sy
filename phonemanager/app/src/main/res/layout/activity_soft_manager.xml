@@ -1,0 +1,150 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <com.feicui.view.TitleView
+        android:id="@+id/titleView1"
+        android:layout_width="match_parent"
+        android:background="@color/deepblue"
+        android:layout_height="40dp" >
+    </com.feicui.view.TitleView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:overScrollMode="always" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp" >
+
+                <com.feicui.view.SoftView
+                    android:id="@+id/sv"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" >
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1.00"
+                        android:drawableLeft="@drawable/shape_soft_blue"
+                        android:gravity="center"
+                        android:text="手机内置空间" />
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1.00"
+                        android:drawableLeft="@drawable/shape_soft_green"
+                        android:gravity="center"
+                        android:text="手机外置空间" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="手机内置空间" />
+
+            <ProgressBar
+                android:id="@+id/pb_self"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:max="100"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:progress="40"
+                android:progressDrawable="@drawable/layer_list_clear_progress" />
+
+            <TextView
+                android:id="@+id/tv_selfFree"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:paddingRight="10dp"
+                android:text="可用：2.23G/4.00G" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="手机外置空间" />
+
+            <ProgressBar
+                android:id="@+id/pb_out"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:max="100"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:progress="40"
+                android:progressDrawable="@drawable/layer_list_clear_progress" />
+
+            <TextView
+                android:id="@+id/tv_outFree"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:paddingRight="10dp"
+                android:text="可用：2.23G/4.00G" />
+
+            <TextView
+                android:id="@+id/tv_allSoft"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/selector_main_btn"
+                android:drawableRight="@drawable/ic_arrows_right"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="所有软件" />
+
+            <TextView
+                android:id="@+id/tv_sysSoft"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/selector_main_btn"
+                android:drawableRight="@drawable/ic_arrows_right"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="系统软件" />
+
+            <TextView
+                android:id="@+id/tv_userSoft"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/selector_main_btn"
+                android:drawableRight="@drawable/ic_arrows_right"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="用户软件" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

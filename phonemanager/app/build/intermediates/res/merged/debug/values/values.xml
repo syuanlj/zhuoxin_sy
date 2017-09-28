@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background">#F9F9F9</color>
+    <color name="battery_speed">#FF00AA00</color>
+    <color name="black">#000000</color>
+    <color name="blue">#FF009ACD</color>
+    <color name="deepblue">#034289</color>
+    <color name="green">#66CC33</color>
+    <color name="grey">#CCCCCC</color>
+    <color name="halftransparency">#e0000000</color>
+    <color name="orange">#FFBB33</color>
+    <color name="piechar_progressbar_bg">#FFD9D9D9</color>
+    <color name="red">#E83333</color>
+    <color name="transparency">#00000000</color>
+    <color name="white">#FFF</color>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="set_item_height">60dp</dimen>
+    <dimen name="set_item_textsize">12.0sp</dimen>
+    <dimen name="set_item_titlesize">16.0sp</dimen>
+    <string name="action_settings">Settings</string>
+    <string name="app_name">手机管家</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="set_tv_notification">发送通知</string>
+    <string name="setting_about">关于我们</string>
+    <string name="setting_autostart">开机启动</string>
+    <string name="setting_clear">清理缓冲</string>
+    <string name="setting_help">帮助说明</string>
+    <string name="setting_notifmsg">通知图标</string>
+    <string name="setting_pushmsg">消息推送</string>
+    <string name="setting_share">好友分享</string>
+    <string name="setting_study">意见反溃</string>
+    <string name="setting_update">版本更新</string>
+    <string name="title_activity_about_us">AboutUsActivity</string>
+    <string name="title_activity_clear">ClearActivity</string>
+    <string name="title_activity_file_list">FileListActivity</string>
+    <string name="title_activity_file_manager">FileManagerActivity</string>
+    <string name="title_activity_lead">LeadActivity</string>
+    <string name="title_activity_logo">LogoActivity</string>
+    <string name="title_activity_phone_check">PhoneCheckActivity</string>
+    <string name="title_activity_setting">SettingActivity</string>
+    <string name="title_activity_soft_list">SoftListActivity</string>
+    <string name="title_activity_soft_manager">SoftManagerActivity</string>
+    <string name="title_activity_speed_up">SpeedUpActivity</string>
+    <string name="title_activity_tel_list">TelListActivity</string>
+    <string name="title_activity_tel_manager">TelManagerActivity</string>
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    <style name="setting_item">
+        <item name="android:contentDescription">设置页面每个item的Style</item>
+        
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/set_item_height</item>
+        <item name="android:background">@drawable/home_entry_item</item>
+        
+    </style>
+    <style name="setting_item_head">
+        <item name="android:contentDescription">设置页面每个item头标题的Style</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/set_item_titlesize</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#FF000000</item>
+        <item name="android:layout_marginLeft">10.0dip</item>
+    </style>
+    <style name="setting_item_head_icon">
+        <item name="android:contentDescription">设置页面每个item尾部图标的Style</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">10.0dip</item>
+        <item name="android:src">@drawable/ic_arrows_right</item>
+    </style>
+    <style name="setting_item_head_icon_toggle" parent="setting_item_head_icon">
+        <item name="android:background">@drawable/check_switch</item>
+        <item name="android:textOff"/>
+         <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:textOn"/>
+    </style>
+</resources>

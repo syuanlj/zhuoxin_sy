@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ll_Parent"
+    android:background="#0C4685"
+    android:orientation="vertical"
+    tools:context="com.feicui.activity.PhoneCheckActivity" >
+
+    <com.feicui.view.TitleView
+        android:id="@+id/titleView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </com.feicui.view.TitleView>
+    
+    <com.feicui.view.BatteryView
+        android:padding="5dp"
+        android:id="@+id/bv_pc"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+         />
+    
+   <FrameLayout
+       android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <ListView
+            android:id="@+id/listviewLoad"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:divider="@color/transparency"
+            android:visibility="invisible" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:indeterminateBehavior="repeat"
+            android:indeterminateDrawable="@drawable/progressbar_rotate"
+            android:indeterminateDuration="600"
+            android:indeterminateOnly="true"
+            android:visibility="visible" />
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="red">#E83333</color>
+    <color name="green">#66CC33</color>
+    <color name="orange">#FFBB33</color>
+    <color name="grey">#CCCCCC</color>
+    <color name="white">#FFF</color>
+    <color name="black">#000000</color>
+    <color name="background">#F9F9F9</color>
+    <color name="blue">#FF009ACD</color>
+    <color name="transparency">#00000000</color>
+    <color name="deepblue">#034289</color>
+    <color name="halftransparency">#e0000000</color>
+    <!-- 内存空间进度条背景色 -->
+
+    <color name="piechar_progressbar_bg">#FFD9D9D9</color>
+     <!-- 电量进度条进度色 -->
+    <color name="battery_speed">#FF00AA00</color>
+</resources>

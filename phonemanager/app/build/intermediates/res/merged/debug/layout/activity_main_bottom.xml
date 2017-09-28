@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_speed"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_main_btn"
+            android:drawableTop="@drawable/icon_rocket"
+            android:gravity="center"
+            android:text="手机加速" />
+
+        <TextView
+            android:id="@+id/tv_soft"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_main_btn"
+            android:drawableTop="@drawable/icon_softmgr"
+            android:gravity="center"
+            android:text="软件管理" />
+
+        <TextView
+            android:id="@+id/tv_check"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_main_btn"
+            android:drawableTop="@drawable/icon_phonemgr"
+            android:gravity="center"
+            android:text="手机检测" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_tel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_main_btn"
+            android:drawableTop="@drawable/icon_telmgr"
+            android:gravity="center"
+            android:text="通讯大全" />
+
+        <TextView
+            android:id="@+id/tv_file"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_main_btn"
+            android:drawableTop="@drawable/icon_filemgr"
+            android:gravity="center"
+            android:text="文件管理" />
+
+        <TextView
+            android:id="@+id/tv_clear"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_main_btn"
+            android:drawableTop="@drawable/icon_sdclean"
+            android:gravity="center"
+            android:text="垃圾清理" />
+    </LinearLayout>
+
+</LinearLayout>

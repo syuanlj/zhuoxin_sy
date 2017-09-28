@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.sy.mediaapplication.CameraAlbumActivity">
+
+    <Button
+        android:id="@+id/camera_bt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Take Photo"/>
+    <ImageView
+        android:id="@+id/camera_iv"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="1"/>
+    <Button
+        android:id="@+id/play_bt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="play"/>
+    <Button
+        android:id="@+id/pause_bt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="pause"/>
+    <Button
+        android:id="@+id/stop_bt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="stop"/>
+</LinearLayout>

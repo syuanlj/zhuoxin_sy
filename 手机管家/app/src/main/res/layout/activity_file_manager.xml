@@ -1,0 +1,93 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.feicui.view.TitleView
+        android:id="@+id/titleView1"
+        android:background="@color/deepblue"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" >
+    </com.feicui.view.TitleView>
+
+    <FrameLayout
+        android:id="@+id/fl_radar"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#074385" >
+
+        <com.feicui.view.RadarUnderView
+            android:id="@+id/radarUnderView1"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center" />
+
+        <com.feicui.view.RadarUpView
+            android:id="@+id/ruv_fm"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:id="@+id/tv_allSize"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="已发现"
+            android:textColor="@color/white" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_result"
+        android:visibility="gone"
+       android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#074385" >
+
+        <com.feicui.view.KeDuView
+            android:id="@+id/kedu"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:id="@+id/tv_size"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:text="已发现"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_score"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="70"
+             android:textColor="@color/white"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center"
+            android:text="%"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    </FrameLayout>
+
+    <ListView
+        android:id="@+id/lv_fileManager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </ListView>
+
+</LinearLayout>

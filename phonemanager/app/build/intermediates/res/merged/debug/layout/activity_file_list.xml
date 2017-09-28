@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.feicui.view.TitleView
+        android:id="@+id/titleView1"
+        android:background="@color/deepblue"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" >
+     </com.feicui.view.TitleView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="文件数量：" />
+
+        <TextView
+            android:id="@+id/tv_allNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="140个"
+            android:textColor="#FF8C00"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:text="占用空间：" />
+
+        <TextView
+            android:id="@+id/tv_allSize"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="140M"
+            android:textColor="#FF8C00"
+            android:textStyle="bold|italic" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_fileList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/bt_fileDelet"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+       
+        android:background="@drawable/selector_clear_clear"
+        android:text="删除所选文件"
+        android:textColor="@color/white" />
+
+</LinearLayout>
